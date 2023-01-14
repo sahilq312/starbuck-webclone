@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: azure;
+    font-family: 'Roboto';
+    padding: 0;
+    margin: 0;
+}
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    background-color:white;
+}
+.nav-bar .nav-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.nav-bar .nav-left img {
+    width: 40px;
+    height: 40px;
+    padding-left: 125px;
+    padding-top: 17px;
+}
+.nav-bar .nav-left ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    font-size: 15px;
+    padding-left: 35px;
+    padding-top: 25px;
+}
+.nav-bar .nav-left ul li a {
+    padding-left: 30px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+.nav-bar .nav-right {
+    width: 50%;
+    height: 100%;
+
+}
+.nav-bar .nav-right ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-top: 20px;
+    
+}
+.nav-bar .nav-right input {
+    width: 270px;
+    height: 30px;
+    border-radius: 2rem;
+    border-width: 1px;
+}
+.nav-bar .nav-right input::placeholder {
+    padding-left: 2.5rem;
+}
+.search {
+    position: absolute;
+    padding-right: 470px;
+    padding-top: 7px;
+    opacity: 30%;
+}
+.profile {
+    padding-left: 200px;
+    width: 50px;
+}
+.sign-up {
+    margin-top: 78px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #1b4332;
+    color: aliceblue;
+    padding-left: 125px;
+    padding-right: 125px;
+}
+.sign-up button{
+    width: 100px;
+    height: 30px;
+    background-color: #1b4332;
+    color: aliceblue;
+    border-color: azure;
+    border-radius: 2rem;
+}
+.sign-up h3 {
+    font-weight: 400;
+    font-size: 19px;
+}
+.bestseller {
+    padding-left: 125px;
+    padding-right: 125px;
+    height: 280px;
+    background-color:white;
+}.bestseller h2 {
+    word-spacing: 0.1rem;
+    font-weight: 800;
+    color: #1b4332;
+    padding-top: 20px;
+}
+.bestseller img {
+    border-radius: 50%;
+    width: 108px;
+}
+.bestseller ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-top: 30px;
+    text-align: center;
+}
+.bestseller ul p{
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 0.5rem;
+}
+.recommends {
+    height: 400px;
+    padding-left:125px ;
+    padding-right:125px ;
+    background-color: rgb(196, 192, 192);
+}
+.recommends .recommendcard span {
+    font-size: 1.7em;
+    font-weight: 500;
+    align-items:flex-start ;
+}
+.recommends .recommendcard h6 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.offer {
+    height: 400px;
+    background-color: white;
+}
+.recommends .recommendcard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 30px;
+}
+.recommends .cards ul{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.recommends .cards ul li{
+    display: flex;
+    flex-wrap: wrap;
+    height: 160px;
+    width: 410px;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+.recommends .cards .r1 .cartimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 70%;
+}
+.recommends .cards .r1 .cartimage img{
+    width:80px;
+    height:80px;
+    border-radius: 8px;
+}
+.recommends .cards .r1 .productdetail{
+    width: 75%;
+    height: 70%;
+}
+.recommends .cards .r1 .productdetail svg{
+    padding-top: 1.2rem;
+}
+.recommends .cards .r1 .productdetail h3{
+    font-size: 14px;
+}
+.recommends .cards .r1 .productdetail span{
+    font-size: 8px;
+    font-weight: 500;
+    color: grey;
+}
+.recommends .cards .r1 .price{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-items: flex-start;
+    justify-content: space-between;
+    padding-right: 1.1rem;
+}
+.recommends .cards .r1 .price h3{
+    font-size: 14px;
+    padding-left: 1.1em;
+}
+.recommends .cards .r1 .price button{
+    font-size: 12px;
+    width: 96px;
+    height: 32px;
+    background-color: #1b4332;
+    color: white;
+    border-radius: 8rem;
+    border: 0px;
+}
+/*r2*/
+.recommends .cards .r2 .cartimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 70%;
+}
+.recommends .cards .r2 .cartimage img{
+    width:80px;
+    height:80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.recommends .cards .r2 .productdetail{
+    width: 75%;
+    height: 70%;
+}
+.recommends .cards .r2 .productdetail svg{
+    padding-top: 1.2rem;
+}
+.recommends .cards .r2 .productdetail h3{
+    font-size: 14px;
+}
+.recommends .cards .r2 .productdetail span{
+    font-size: 8px;
+    font-weight: 500;
+    color: grey;
+}
+.recommends .cards .r2 .price{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-items: flex-start;
+    justify-content: space-between;
+    padding-right: 1.1rem;
+}
+.recommends .cards .r2 .price h3{
+    font-size: 14px;
+    padding-left: 1.1em;
+}
+.recommends .cards .r2 .price button{
+    font-size: 12px;
+    width: 96px;
+    height: 32px;
+    background-color: #1b4332;
+    color: white;
+    border-radius: 8rem;
+    border: 0px;
+}
+/* r3 */
+.recommends .cards .r3 .cartimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 70%;
+}
+.recommends .cards .r3 .cartimage img{
+    width:80px;
+    height:80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.recommends .cards .r3 .productdetail{
+    width: 75%;
+    height: 70%;
+}
+.recommends .cards .r3 .productdetail svg{
+    padding-top: 1.2rem;
+}
+.recommends .cards .r3 .productdetail h3{
+    font-size: 14px;
+}
+.recommends .cards .r3 .productdetail span{
+    font-size: 8px;
+    font-weight: 500;
+    color: grey;
+}
+.recommends .cards .r3 .price{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-items: flex-start;
+    justify-content: space-between;
+    padding-right: 1.1rem;
+}
+.recommends .cards .r3 .price h3{
+    font-size: 14px;
+    padding-left: 1.1em;
+}
+.recommends .cards .r3 .price button{
+    font-size: 12px;
+    width: 96px;
+    height: 32px;
+    background-color: #1b4332;
+    color: white;
+    border-radius: 8rem;
+    border: 0px;
+}
+footer {
+    background-color: #1b4332;
+    height: 480px;
+    color: white;
+}
+footer .mid{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    text-align: left;
+    padding-left: 125px;
+    padding-right: 125px;
+    padding-top: 40px;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    padding-bottom: 1.2rem;
+    font-size: .875em;
+}
+footer ul h3 {
+    padding-bottom: 1.4rem;
+    font-weight: 500;
+}
+footer .line {
+    display: flex;
+    justify-content: center;
+    padding-left: 125px;
+    padding-right: 125px;
+    padding-top: 120px;
+}
+footer .line hr{
+    width: 100%;
+}
